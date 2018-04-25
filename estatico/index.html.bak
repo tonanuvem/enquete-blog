@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>URRU!!! Agora eu TO NA NUVEM....</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  </head>
+  <body> <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header"> <a href="index.html" class="logo"><strong>TO NA
+                NUVEM . NET</strong> - Test Labs</a>
+            <ul class="icons">
+              <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            </ul>
+          </header>
+          <!-- Banner -->
+          <section id="banner">
+            <div class="content">
+              <header>
+                <h1>To Na Nuvem . NET<br>
+                  com alguns Labs !</h1>
+                <p>Artigos publicados para testarmos a AWS</p>
+              </header>
+              <p>Como implementar Gerenciamento Inteligente?</p>
+              <ul class="actions">
+                <li><a href="#" class="button big">Saber mais</a></li>
+              </ul>
+            </div>
+            <span class="image object"> <img src="images/nanuvem.jpg" alt=""> </span>
+          </section>
+          <!-- Section -->
+          <section>
+            <header class="major">
+            
+              <h2>Que tal entender como o Netflix monitora seus microserviços?!</h2>
+              </header>
+            <div class="video">
+              <center>
+              	<iframe src="https://www.youtube.com/embed/emaPPg_zxb4" allow="autoplay; encrypted-media"
+                allowfullscreen="" height="360" frameborder="0" width="640"></iframe>
+               </center>
+            </div>
+          </section>
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Monitoramento Inteligente</h2>
+            </header>
+            <div class="features">
+              <article> <span class="icon fa-diamond"></span>
+                <div class="content">
+                  <h3>Gerenciamento de eventos</h3>
+                  <p>Conceitos modernos de monitoração baseada em comportamento
+                    dinâmicos X conceitos antigos de monitoração baseada em
+                    limites pré-definidos Alarmes inteligentes</p>
+                </div>
+              </article>
+              <article> <span class="icon fa-paper-plane"></span>
+                <div class="content">
+                  <h3>Monitoramento de componentes de Infraestrutura</h3>
+                  <p>Monitores para servidores, equipamentos de redes, storages,
+                    banco de dados, etc.</p>
+                </div>
+              </article>
+              <article> <span class="icon fa-rocket"></span>
+                <div class="content">
+                  <h3>Monitoramento de Aplicações (APM)</h3>
+                  <p>Não basta adotar as melhores práticas no desenvolvimento de
+                    aplicações Web ou Móveis e, em seguida, implantá-las sem uma
+                    estratégia especialmente voltada ao acompanhamento de sua
+                    performance.</p>
+                </div>
+              </article>
+              <article> <span class="icon fa-signal"></span>
+                <div class="content">
+                  <h3>Monitoramento de Microserviços (Docker)s</h3>
+                  <p>As ferramentas de teste e monitoramento de micro serviços e
+                    containers em grande escala podem rapidamente tornar-se
+                    custosas e, diante disto, foi sugerido que a simulação
+                    poderia ser uma alternativa viável.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Gerenciamento do Ciclo de Vida de um serviço</h2>
+            </header>
+            <div class="posts">
+              <article> <a href="#" class="image"><img src="images/pic01.jpg" alt=""></a>
+                <h3>Principais Processos de Gestão de Serviços de TI</h3>
+                <p>O GSTI - Gerenciamento de Serviços de TI tem por objetivo
+                  prover um serviço de TI com qualidade e alinhado às
+                  necessidades do negócio, buscando redução de custos a longo
+                  prazo.</p>
+                <ul class="actions">
+                  <li><a href="#" class="button">Continuar</a></li>
+                </ul>
+              </article>
+              <article> <a href="#" class="image"><img src="images/pic02.jpg" alt=""></a>
+                <h3>Gerenciamento do Nível de Serviço</h3>
+                <p>Tem como objetivo garantir que os níveis de serviços
+                  acordados com os clientes sejam entregues no presente e no
+                  futuro.</p>
+                <ul class="actions">
+                  <li><a href="#" class="button">Continuar</a></li>
+                </ul>
+              </article>
+              <article> <a href="#" class="image"><img src="images/pic03.jpg" alt=""></a>
+                <h3>Ciclo de vida de um novo serviço em uma TI Tradicional (Modo
+                  1)</h3>
+                <p>Tudo que é oferecido pela empresa seja produto ou serviço,
+                  precisa seguir o conceito de maturação que abrange desde a
+                  fase de pesquisa e desenvolvimento até o lançamento. Depois
+                  dessa etapa, o serviço evolui para a fase de maturidade, onde
+                  o serviço é aposentado ou readequado.</p>
+                <ul class="actions">
+                  <li><a href="#" class="button">Continuar</a></li>
+                </ul>
+              </article>
+              <article> <a href="#" class="image"><img src="images/pic04.jpg" alt=""></a>
+                <h3>Ciclo de vida de um novo serviço em uma TI Ágil (Modo 2)</h3>
+                <p>Existem dois modelos básicos para este tipo de ciclo de vida
+                  de um projeto: aqueles centrado no fluxo (Kanban, por exemplo)
+                  e aqueles centrados em ciclos iterativos e incrementais
+                  (Scrum, por exemplo). No primeiro caso, são estabelecidas
+                  limitações muito claras para a aprovação das atividades (Work
+                  in Progress) e no último as iterações são mais rápidas (entre
+                  1 e 4 semanas) entre os sprints, ou seja, o trabalho que é
+                  realizado.</p>
+                <ul class="actions">
+                  <li><a href="#" class="button">Continuar</a></li>
+                </ul>
+              </article>
+              <article> <a href="#" class="image"><img src="images/pic05.jpg" alt=""></a>
+                <h3>TI centrada em métricas de Negócio X TI centrada em métricas
+                  técnicas</h3>
+                <p>Utilizando os relatórios e métricas da forma correta, irá
+                  ajudá-lo a tornar-se proativo e até mesmo ajudá-lo a antecipar
+                  as necessidades de sua organização. Relatórios de histórico
+                  vão ajudá-lo a aprender com seus erros e fazer correções para
+                  avançar, enquanto os deshboards e os dados atuais lhe
+                  permitirão fazer alterações para antecipar questões e movê-lo
+                  mais perto de uma organização de suporte ao cliente centrada
+                  no negócio.</p>
+                <ul class="actions">
+                  <li><a href="#" class="button">Continuar</a></li>
+                </ul>
+              </article>
+              <article> <a href="#" class="image"><img src="images/pic06.jpg" alt=""></a>
+                <h3>Melhoria da qualidade do serviços baseada em indicadores</h3>
+                <p>Os indicadores são utilizados por empresas de todos os
+                  portes, com a função de orientar a empresa de forma
+                  estratégica e ainda oferecer um diagnostico real da situação
+                  da empresa.</p>
+                <ul class="actions">
+                  <li><a href="#" class="button">Continuar</a></li>
+                </ul>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#"> <input name="query" id="query" placeholder="Pesquisar"
+
+                type="text"> </form>
+          </section>
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="index.html">Principal</a></li>
+              <li><a href="generic.html">Artigos</a></li>
+              <li><a href="elements.html">Laboratórios</a></li>
+              <li> <span class="opener">Ferramentas de Monitoração</span>
+                <ul>
+                  <li><a href="#">Dynatrace - Netflix OSS</a></li>
+                  <li><a href="#">Prometheus</a></li>
+                  <li><a href="#">Grafana</a></li>
+                  <li><a href="#">Kubernets</a></li>
+                </ul>
+              </li>
+              <li> <span class="opener">Outras Ferramentas</span>
+                <ul>
+                  <li><a href="#">SCOM Avi code</a></li>
+                  <li><a href="#">What is up</a></li>
+                  <li><a href="#">BMC</a></li>
+                  <li><a href="#">CA</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Mais vídeos</a></li>
+              <li><a href="#">Códigos de exemplos</a></li>
+              <li><a href="#">Aplicações</a></li>
+            </ul>
+          </nav>
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Blogs bacanas</h2>
+            </header>
+            <div class="mini-posts">
+              <article> <a href="#" class="image"><img src="images/pic07.jpg" alt=""></a>
+                <p>AWS.</p>
+              </article>
+              <article> <a href="#" class="image"><img src="images/pic08.jpg" alt=""></a>
+                <p>IBM Softlayer.</p>
+              </article>
+              <article> <a href="#" class="image"><img src="images/pic09.jpg" alt=""></a>
+                <p>Google Cloud Plataform.</p>
+              </article>
+            </div>
+            <ul class="actions">
+              <li><a href="#" class="button">Mais</a></li>
+            </ul>
+          </section>
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Contato</h2>
+            </header>
+            <p>Envie um email.</p>
+            <ul class="contact">
+              <li class="fa-envelope-o"><a href="#">contato@tonanuvem.net</a></li>
+              <li class="fa-phone">(000) 000-0000</li>
+              <li class="fa-home">1234 na nuvem #<br>
+                Meio, Abstrato 00000-0000</li>
+            </ul>
+          </section>
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">© To Na Nuvem . NET. 10x 2 HTML5 UP. &amp;
+              Unsplash.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <title>Enquete - Resultado das Questões</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    {% load static %}
+    <!--[if lte IE 8]><script src="{% static "enquete/assets/js/ie/html5shiv.js" %}"></script><![endif]-->
+    <link rel="stylesheet" href="{% static "enquete/assets/css/main.css" %}" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="{% static "enquete/assets/css/ie9.css" %}" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href=""{% static "enquete/assets/css/ie8.css" %}" /><![endif]-->
+
+    {% block javascript %}
+    
+    <!--Load the AJAX API--
+    {% load static %}
+    <script type="text/javascript" src="{% static "enquete/assets/js/gstatic-charts-loader.js" %}"></script> -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Opções');
+        data.addColumn('number', 'Votos');
+
+        {% for choice in question.escolhas_set.all %}
+          data.addRows([ ['{{ choice.texto_escolha }}', {{ choice.qtd_votos }}] ]);
+        {% endfor %}
+
+        // Set chart options
+        var options = {'title':'Questão nº {{question.id}}',
+                       'width':500,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+
+        setInterval(function() {
+          chart.draw(data, options);
+        }, 13000);
+      }
+    </script>
+    {% endblock %}
+  </head>
+
+  <body>
+    {% load static %}
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Main -->
+          <div id="main">
+            <div class="inner">
+
+              <!-- Header -->
+              <header id="header">
+                  <a href="index.html" class="logo"><strong>To Na Nuvem . NET</a>
+                  <ul class="icons">
+                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                  </ul>
+              </header>
+              <!-- Banner 
+              <section id="banner">
+                <div class="content">
+                  <header>
+                    <h1>To Na Nuvem . NET<br>
+                      com alguns Labs !</h1>
+                    <p>Artigos publicados para testarmos a AWS</p>
+                  </header>
+                </div>
+                <span class="image object"> <img src="{% static "enquete/images/enquete.jpg" %}" alt=""> </span> 
+              </section> -->
+
+              <!-- Content -->
+              <section>
+                  <header class="main">
+                    <h1><br>Resultado da Questão nº {{question.id}}:</h1>
+                  </header>
+              </section>
+
+              <hr class="major" />
+
+              <div class="row">
+                <div class="6u 12u$(small)">
+                  <div class="box">
+                  <h3>Questão nº {{question.id}}:</h3>
+                  <br>
+                    {% for choice in question.escolhas_set.all %}
+                      <p>{{ choice.texto_escolha }} tem {{ choice.qtd_votos }} votos</p>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div class="6u$ 12u$(small)">
+                  <div class="box">
+                  <h3>Resultados da Questão nº {{question.id}}:</h3>
+                    <!--Div that will hold the pie chart-->
+                    <div id="chart_div"></div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+      </div>
+      
+    <!-- Scripts --
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]--
+    <script src="assets/js/main.js"></script>-->
+  </body>
+</html>
+

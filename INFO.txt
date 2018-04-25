@@ -1,0 +1,29 @@
+Criando um projeto: A partir da linha de comando, cd para o diretório onde você gostaria de armazenar seu código, então execute o seguinte comando:
+
+	$ django-admin startproject SITE
+
+O servidor de desenvolvimento: Vamos verificar se ele funciona. Vá para o diretório SITE, se você ainda não estiver nele, e rode os seguintes comando:
+
+	$ python manage.py runserver
+
+Criando um aplicativo de votação: Cada aplicação que você escreve no Django consiste de um pacote Python que segue uma certa convenção. O Django vem com um utilitário que gera automaticamente a estrutura básica de diretório de uma aplicação, então você pode se concentrar apenas em escrever código em vez de ficar criando diretórios.
+
+	$ python manage.py startapp APLICAÇÃO
+
+Escreva sua primeira view: Hora de criar a primeira view. Abra o arquivo 
+	APLICAÇÃO/views.py
+
+Configuração do banco de dados: Agora, abra o arquivo, mude TIME_ZONE para o seu fuso horário e também observe a configuração do INSTALLED_APPS. Para incluir a aplicação no nosso projeto, precisamos adicionar a referência à classe de configuração da aplicação na definição do INSTALLED_APPS: 'APLICAÇÃO.apps.APLICAÇÃOConfig',
+	SITE/settings.py. 
+
+Criando modelos: vamos definir seus modelos, o layout do banco de dados, com metadados adicionais.
+	APLICAÇÃO/models.py
+
+Migrations are very powerful. We’ll cover them in more depth in a later part of the tutorial, but for now, remember the three-step guide to making model changes:
+
+Change your models (in models.py).
+	Run > python manage.py makemigrations -> to create migrations for those changes
+	Run > python manage.py migrate -> to apply those changes to the database.
+
+Abre prompt dentro da aplicação:
+	python manage.py shell -> abre prompt dentro da aplicação
